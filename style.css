@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body{
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 14px;
+    min-height: 100vh;
+}
+
+h1{
+    text-emphasis: '🔥';
+    text-align:  center;
+}
+ 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 800;
+    margin: 0 auto;
+
+    
+}
+
+form textarea {
+    width: 100%;
+    resize: none;
+    min-height: 60px;
+    padding: 14px;
+
+}
+
+form button{
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.5s ease;
+    
+}
+
+form button:hover{
+    background-color: rgb(155, 22, 22);
+    
+}
+
+.todoContainer,
+.todo{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.todo{
+    padding: 14px;
+    border: 1px solid rgb(139, 117, 117);
+    border-radius: 4px;
+}
+
+
+
+.btnContainer{
+    display: flex;
+    gap: 6px;
+
+}
+
+.iconBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 8px;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.iconBtn:hover{
+    background: rgb(136, 239, 101);
+}
